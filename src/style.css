@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500&family=Montserrat:wght@500;700&display=swap");
+/* base */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primaryColor: hsl(225, 50%, 48%);
+  --secondaryColor: hsl(180, 17%, 95%);
+  --colorOne: hsl(15, 74%, 70%);
+  --colorTwo: hsl(28, 100%, 82%);
+  --hoverColor: hsl(225, 56%, 59%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 12%);
+  --textColor: hsl(240, 1%, 48%);
+  --borderColor: hsl(0, 0%, 83%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(145, 145, 145);
+  --inputColor: hsl(330, 12%, 97%);
+  --boxShadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  --transition: all 0.4s ease-in-out;
+}
+
+body {
+  background-color: var(--whiteColor);
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.section {
+  padding: 4rem 0 2rem;
+}
+
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.none {
+  display: none;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.7rem 1.5rem;
+  background: var(--primaryColor);
+  border: none;
+  outline: none;
+  border-radius: 3rem;
+  cursor: pointer;
+  color: var(--whiteColor);
+}
+.btn a {
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+.btn:hover {
+  background: var(--hoverColor);
+}
+
+img, video {
+  width: 100%;
+  height: auto;
+}
+
+input {
+  font-size: 100%;
+  color: var(--greyText);
+}
+
+p {
+  font-size: 13px;
+  color: var(--greyText);
+  line-height: 22px;
+}
+
+h4 {
+  padding: 1rem 0;
+  font-weight: 700;
+  color: var(--blackColor);
+}
+
+h2 {
+  font-size: 25px;
+  padding: 1rem 0;
+  color: var(--blackColor);
+}
+
+/* base end *//*# sourceMappingURL=style.css.map */
