@@ -52,10 +52,6 @@ li {
   cursor: pointer;
 }
 
-.none {
-  display: none;
-}
-
 .flex {
   display: flex;
   align-items: center;
@@ -64,6 +60,10 @@ li {
 .grid {
   display: grid;
   align-items: center;
+}
+
+.none {
+  display: none;
 }
 
 .btn {
@@ -111,4 +111,96 @@ h2 {
   color: var(--blackColor);
 }
 
-/* base end *//*# sourceMappingURL=style.css.map */
+/* base end */
+/* navbar */
+.navBar {
+  position: fixed;
+  flex-direction: column;
+  width: 100%;
+  z-index: 1000;
+}
+.navBar .navBarOne,
+.navBar .navBarTwo {
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+.navBar .navBarOne {
+  background: var(--secondaryColor);
+}
+.navBar .navBarOne .icon:hover {
+  color: var(--primaryColor);
+}
+.navBar .navBarOne .atb {
+  gap: 1rem;
+}
+.navBar .navBarOne .atb span {
+  color: var(--blackColor);
+  font-size: 13px;
+  cursor: pointer;
+}
+.navBar .navBarOne .atb span:hover {
+  color: var(--primaryColor);
+  font-size: 700px;
+}
+.navBar .navBarTwo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 3rem;
+  padding: 1.5rem 1rem;
+  position: fixed;
+  transition: all 0.4s ease-in-out;
+}
+.navBar .navBarTwo .logoDiv .logo {
+  width: 20%;
+}
+@media screen and (max-width: 768px) {
+  .navBar .navBarTwo .navBarMenu {
+    position: absolute;
+    background: var(--secondaryColor);
+    padding: 1.5rem;
+    border-radius: 10px;
+    top: 5rem;
+    right: -50%;
+    width: 80%;
+    transform: translateX(50%);
+    z-index: 1001;
+    box-shadow: var(--boxShadow);
+    border: 3px solid var(--whiteColor);
+    transition: all 0.4s ease-in-out;
+  }
+  .navBar .navBarTwo .navBarMenu .menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+  .navBar .navBarTwo .navBarMenu .menu .listItem {
+    padding: 0.5rem 0;
+    cursor: pointer;
+    color: var(--blackColor);
+  }
+  .navBar .navBarTwo .navBarMenu .menu .listItem:hover {
+    color: var(--primaryColor);
+    font-weight: 700;
+  }
+  .navBar .navBarTwo .navBarMenu .btnOne {
+    display: block;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1rem;
+  }
+  .navBar .navBarTwo .btnTwo {
+    display: none;
+  }
+}
+.navBar .navBarTwo .toggleIcon .icon {
+  font-size: 30px;
+  color: var(--blackColor);
+}
+.navBar .navBarTwo .showNavBar {
+  right: 50%;
+  transition: all 0.4s ease-in-out;
+}
+
+/* navbar end *//*# sourceMappingURL=style.css.map */

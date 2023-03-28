@@ -54,10 +54,6 @@ li {
     cursor: pointer;
 }
 
-.none {
-    display: none;
-}
-
 .flex {
     display: flex;
     align-items: center;
@@ -66,6 +62,10 @@ li {
 .grid {
     display: grid;
     align-items: center;
+}
+
+.none {
+    display: none;
 }
 
 .btn {
@@ -115,13 +115,106 @@ h2 {
 
 /* base end */
 
+/* navbar */
+.navBar {
+    position: fixed;
+    flex-direction: column;
+    width: 100%;
+    z-index: 1000;
+    .navBarOne,
+    .navBarTwo {
+        justify-content: space-between;
+        padding: 1rem;
+        width: 100%;
+    }
+    .navBarOne {
+        background: var(--secondaryColor);
+        .icon:hover {
+            color: var(--primaryColor);
+        }
+        .atb {
+            gap: 1rem;
+            span {
+                color: var(--blackColor);
+                font-size: 13px;
+                cursor: pointer;
+                &:hover {
+                    color: var(--primaryColor);
+                    font-size: 700px;
+                }
+            }
+        }
+    }
+    .navBarTwo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 3rem;
+        padding: 1.5rem 1rem;
+        position: fixed;
+        transition: all 0.4s ease-in-out;
+        .logoDiv {
+            .logo {
+                width: 20%;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .navBarMenu {
+                position: absolute;
+                background: var(--secondaryColor);
+                padding: 1.5rem;
+                border-radius: 10px;
+                top: 5rem;
+                right: -50%;
+                width: 80%;
+                transform: translateX(50%);
+                z-index: 1001;
+                box-shadow: var(--boxShadow);
+                border: 3px solid var(--whiteColor);
+                transition: all 0.4s ease-in-out;
+                .menu {
+                    flex-direction: column;
+                    gap: 0.5rem;
+                    text-align: center;
+                    .listItem {
+                        padding: 0.5rem 0;
+                        cursor: pointer;
+                        color: var(--blackColor);
+                        &:hover {
+                            color: var(--primaryColor);
+                            font-weight: 700;
+                        }
+                    }
+                }
+                .btnOne {
+                    display: block;
+                    justify-content: center;
+                    margin: auto;
+                    margin-top: 1rem;
+                }
+            }
+            .btnTwo {
+                display: none;
+            }
+        }
+        .toggleIcon {
+            .icon {
+                font-size: 30px;
+                color: var(--blackColor);
+            }
+        }
+        .showNavBar {
+            right: 50%;
+            transition: all 0.4s ease-in-out;
+        }
+    }
+}
 
 
 
 
 
-
-
+/* navbar end */
 
 
 
