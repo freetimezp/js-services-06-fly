@@ -49,7 +49,7 @@ const Navbar = () => {
                         <li onClick={removeNavBar} className="listItem">Destinations</li>
                     </ul>
 
-                    <button className='btn flex btnOne'>Contact</button>
+                    <button onClick={removeNavBar} className='btn flex btnOne'>Contact</button>
                 </div>
 
                 <button className='btn flex btnTwo'>Contact</button>
