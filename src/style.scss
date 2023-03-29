@@ -380,9 +380,68 @@ h2 {
 
 /* support end */
 
+/* info */
 
+.info {
+    background: var(--secondaryColor);
+    .infoContainer {
+        .titleDiv {
+            flex-direction: column;
+            text-align: center;
+            gap: 1.5rem;
+            justify-content: space-between;
+        }
+        .cardsDiv {
+            gap: 1.5rem;
+            margin-top: 3rem;
+            .singleCard {
+                background: var(--whiteColor);
+                padding: 3rem 2rem;
+                border-radius: 10rem;
+                gap: 1rem;
+                text-align: center;
+                margin: auto;
+                height: 320px;
+                width: 90%;
+                max-width: 250px;
+                transition: all 0.5s ease;
+                &:hover {
+                    box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.1);
+                    .iconDiv {
+                        .icon {
+                            transform: scale(1.4);
+                        }
+                    }
+                }
+                .iconDiv {
+                    justify-content: center;
+                    margin: auto;
+                    background: var(--primaryColor);
+                    width: max-content;
+                    height: 55px;
+                    padding: 1rem;
+                    border-radius: 3rem;
+                    .icon {
+                        color: var(--whiteColor);
+                        transition: all 0.5s ease;
+                    }
+                }
+                .cardTitle {
+                    color: var(--blackColor);
+                    font-weight: 700;
+                }
+                .colorOne {
+                    background: var(--colorOne);
+                }
+                .colorTwo {
+                    background: var(--colorTwo);
+                }
+            }
+        }
+    }
+}
 
-
+/* info end */
 
 
 
