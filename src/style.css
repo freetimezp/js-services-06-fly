@@ -415,4 +415,27 @@ h2 {
   background: var(--colorTwo);
 }
 
-/* info end *//*# sourceMappingURL=style.css.map */
+/* info end */
+/* lounge */
+.lounge .sectionContainer {
+  gap: 1.5rem;
+}
+.lounge .sectionContainer .imgDiv {
+  margin: auto;
+}
+.lounge .sectionContainer .imgDiv img {
+  width: 100%;
+  max-width: 430px;
+}
+.lounge .sectionContainer .textDiv .grids {
+  margin-top: 1rem;
+  gap: 1.5rem;
+}
+.lounge .sectionContainer .textDiv .grids .singleGrid .gridTitle {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--blackColor);
+}
+
+/* lounge end *//*# sourceMappingURL=style.css.map */
