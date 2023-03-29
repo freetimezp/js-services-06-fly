@@ -202,6 +202,11 @@ h2 {
   right: 50%;
   transition: all 0.4s ease-in-out;
 }
+.navBar .navBar_With_Bg {
+  background: var(--secondaryColor);
+  padding: 0.5rem 1rem;
+  box-shadow: var(--boxShadow);
+}
 
 /* navbar end */
 /* home */

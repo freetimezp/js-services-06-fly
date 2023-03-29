@@ -8,14 +8,25 @@ import { CgMenuGridO } from 'react-icons/cg';
 import logo from '../../assets/images/logo.png';
 
 const Navbar = () => {
+    /* set menu active */
     const [active, setActive] = useState('navBarMenu');
-
     const showNavBar = () => {
         setActive('navBarMenu showNavBar');
     };
     const removeNavBar = () => {
         setActive('navBarMenu');
     };
+
+    /* add bg to menu on scroll */
+    const [noBg, addBg] = useState('navBarTwo');
+    const addBgColor = () => {
+        if(window.scrollY >= 10) {
+            addBg('navBarTwo navBar_With_Bg');
+        }else{
+            addBg('navBarTwo');
+        }
+    };
+    window.addEventListener('scroll', addBgColor);
 
     return (
         <div className='navBar flex'>
@@ -35,7 +46,7 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className="navBarTwo flex">
+            <div className={noBg}>
                 <div className="logoDiv">
                     <img src={logo} alt="logo" className='logo' />
                 </div>
