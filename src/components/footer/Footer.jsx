@@ -1,4 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import { AiFillYoutube, AiOutlineTwitter } from 'react-icons/ai';
 import { TiSocialFacebook } from 'react-icons/ti';
@@ -7,10 +10,14 @@ import { FaPinterestP } from 'react-icons/fa';
 import logo from '../../assets/images/logo.png';
 
 const Footer = () => {
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, []);
+
     return (
         <div className='footer'>
             <div className="sectionContainer container grid">
-                <div className="gridOne">
+                <div className="gridOne" data-aos="fade-up" data-aos-duration='2500'>
                     <div className="logoDiv">
                         <img src={logo} alt="logo" className='logo' />
                     </div>
@@ -23,7 +30,7 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="footerLinks">
+                <div className="footerLinks" data-aos="fade-down" data-aos-duration='2500'>
                     <span className="linkTitle">Information</span>
                     <li>
                         <a href="">Home</a>
@@ -45,7 +52,7 @@ const Footer = () => {
                     </li>
                 </div>
 
-                <div className="footerLinks">
+                <div className="footerLinks" data-aos="fade-up" data-aos-duration='2500'>
                     <span className="linkTitle">Quick Guide</span>
                     <li>
                         <a href="">FAQ</a>
@@ -67,7 +74,7 @@ const Footer = () => {
                     </li>
                 </div>
 
-                <div className="footerLinks">
+                <div className="footerLinks" data-aos="fade-down" data-aos-duration='2500'>
                     <span className="linkTitle">Quick Guide</span>
                     <li>
                         <a href="">Chauffuer</a>
