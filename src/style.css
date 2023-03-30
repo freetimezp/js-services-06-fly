@@ -535,4 +535,37 @@ h2 {
   transition: all 1s ease-in-out;
 }
 
-/* travelers end *//*# sourceMappingURL=style.css.map */
+/* travelers end */
+/* subscribers */
+.subscribe {
+  background: var(--secondaryColor);
+}
+.subscribe .sectionContainer {
+  text-align: center;
+}
+.subscribe .sectionContainer .inputDiv {
+  margin-top: 1rem;
+  flex-direction: column;
+  background: var(--whiteColor);
+  border-radius: 1rem;
+}
+.subscribe .sectionContainer .inputDiv input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 1rem 0.5rem;
+}
+.subscribe .sectionContainer .inputDiv input::-moz-placeholder {
+  font-size: 13px;
+  opacity: 0.7;
+}
+.subscribe .sectionContainer .inputDiv input::placeholder {
+  font-size: 13px;
+  opacity: 0.7;
+}
+.subscribe .sectionContainer .inputDiv .btn {
+  width: 100%;
+}
+
+/* subscribers end *//*# sourceMappingURL=style.css.map */
