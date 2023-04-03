@@ -141,7 +141,6 @@ h2 {
 }
 .navBar .navBarOne .atb span:hover {
   color: var(--primaryColor);
-  font-size: 700px;
 }
 .navBar .navBarTwo {
   display: flex;
